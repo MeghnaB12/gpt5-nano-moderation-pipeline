@@ -6,7 +6,7 @@ class ModerationService:
         """
         Mock moderation. Flags text containing specific trigger words.
         """
-        # Mock logic: Flag if specific keywords are found
+        
         forbidden_keywords = ["violence", "illegal_content", "hate_speech"]
         
         for keyword in forbidden_keywords:
@@ -16,7 +16,5 @@ class ModerationService:
                     "flag": f"Detected forbidden category: {keyword}"
                 }
         
-        # Simulate network latency
-        # time.sleep(0.1) 
         
         return {"allowed": True, "flag": None}
